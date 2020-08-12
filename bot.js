@@ -23,6 +23,9 @@ client.on('message', message =>{
      
     }  else if(command === 'pong'){
         message.channel.send('ping!');
+     
+     }  else if(command === 'hello'){
+        message.channel.send('hi');
       
     }
 });
