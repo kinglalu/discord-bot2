@@ -21,10 +21,10 @@ client.on('message', message =>{
     if(command === 'ping'){
         message.channel.send('pong!');
      
-     if(command === 'pong'){
+    }  else if(command === 'pong'){
         message.channel.send('ping!');
       
-    }}
+    }
 });
 
  
