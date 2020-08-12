@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 const client = new Discord.Client();
-
+const prefix = '-';
  
 
 client.on('ready', () => {
@@ -12,14 +12,15 @@ client.on('ready', () => {
 
  
 
-client.on('message', message => {
+client.on('message', message =>{
+    if(!message.content.startsWith(prefix) || message.author.bot) return;
 
-    if (message.content === 'ping') {
+    const args = message.content.slice(prefix.length).split(/ +/);
+    const command = args.shift().toLowerCase();
 
-       message.reply('pong');
-
-       }
-
+    if(command === 'ping'){
+        message.channel.send('pong!');
+    }
 });
 
  
