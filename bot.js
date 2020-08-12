@@ -24,7 +24,7 @@ client.on('message', message =>{
      if(command === 'pong'){
         message.channel.send('ping!');
       
-    }
+    }}
 });
 
  
