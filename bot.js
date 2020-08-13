@@ -26,7 +26,7 @@ client.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
     const args = message.content.slice(prefix.length).split(/ +/);
-    const command = args.shift().toLowerCase();
+    const command = args.shift().toLowerCase(); 
 
     client.on('message', message => {
         if (!message.content.startsWith(prefix) || message.author.bot) return;
@@ -47,7 +47,7 @@ client.on('message', message => {
     } else if (command === 'hello') {
         message.channel.send(`hi ${message.author.username}`);
     } else if (command === 'help') {
-        message.channel.send('here are the commands: -ping,-pong,-hello,-help,-server,-userinfo,-ghostping (lel),-hey,-bored');
+        message.channel.send(`here are the commands: -ping,-pong,-hello,-help,-server,-userinfo,-ghostping (lel),-hey,-bored`);
     } else if (command === 'server') {
         message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
     } else if (command === 'userinfo') {
