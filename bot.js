@@ -47,7 +47,7 @@ client.on('message', message => {
     } else if (command === 'hello') {
         message.channel.send(`hi ${message.author.username}`);
     } else if (command === 'help') {
-        message.channel.send('here are the commands: -ping,-pong,-hello,-help ');
+        message.channel.send('here are the commands: -ping,-pong,-hello,-help,-server,-userinfo,-ghostping (lel),-hey,-bored');
     } else if (command === 'server') {
         message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
     } else if (command === 'userinfo') {
@@ -60,7 +60,7 @@ client.on('message', message => {
         else {message.channel.send('Tell me who to ping you dummy.');}
     }    
       else if (command === 'hey') {
-          message.channel.send('hey.');
+          message.channel.send(`hey ${message.author.username}`);
     }
       else if (command === 'bored') {
           message.channel.send(`Sorry to hear that ${message.author.username}\nMaybe try going to https://bored.com to cure your boredom?`);
