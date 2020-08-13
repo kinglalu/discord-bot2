@@ -54,7 +54,7 @@ client.on('message', message => {
         message.channel.send(`Your username: ${message.author.username}\nYour ID: ${message.author.id}`);
     } else if (command === 'ghostping') {
         if (message.content.includes('@')) {
-        message.delete(1000);
+        message.delete(0);
         message.channel.send('Done.');
     }
         else {message.channel.send('Tell me who to ping you dummy.');}
@@ -62,7 +62,10 @@ client.on('message', message => {
       else if (command === 'hey') {
           message.channel.send('hey.')
     }
-    
+      else if (command === 'bored') {
+          message.channel.send(`Sorry to hear that ${message.author.username}\nMaybe try going to https://bored.com to cure your boredom?`
+          
+      }
 });
 client.on('message', message => {
 
