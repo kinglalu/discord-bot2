@@ -30,7 +30,7 @@ client.on('message', message =>{
       }  else if(command === 'help'){
         message.channel.send('here are the commands: -ping,-pong,-hello,-help ');
     }
-else if (message.content === 'server') {
+else if (command === 'server') {
 	message.channel.send(`Server name: {message.guild.name}/nTotal members: {message.guild.memberCount}`);
 } 
 });
