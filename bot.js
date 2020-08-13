@@ -54,7 +54,7 @@ client.on('message', message => {
         message.channel.send(`Your username: ${message.author.username}\nYour ID: ${message.author.id}`);
     } else if (command === 'test') {
         message.channel.send(`Testing...`);
-        message.bot.delete(2000);
+        message.delete(2000);
     }    
     
     
