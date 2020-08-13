@@ -45,7 +45,7 @@ client.on('message', message => {
         message.channel.send('ping!');
 
     } else if (command === 'hello') {
-        message.channel.send('hi');
+        message.channel.send('hi ${message.author.username}');
     } else if (command === 'help') {
         message.channel.send('here are the commands: -ping,-pong,-hello,-help ');
     } else if (command === 'server') {
@@ -59,7 +59,9 @@ client.on('message', message => {
     }
         else {message.channel.send('Tell me who to ping you dummy.');}
     }    
-    
+      else if (command === 'hey') {
+          message.channel.send('hey.')
+    }
     
 });
 client.on('message', message => {
