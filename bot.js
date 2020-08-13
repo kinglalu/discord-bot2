@@ -50,6 +50,9 @@ client.on('message', message =>{
         message.channel.send('here are the commands: -ping,-pong,-hello,-help ');
     }
     else if (command === 'server') {message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);}
+	else if (command === 'userinfo') {
+	message.channel.send(`Your username: ${message.author.username}\nYour ID: ${message.author.id}`);
+}
 });
 client.on('message', message => {
 
