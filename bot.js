@@ -49,10 +49,10 @@ client.on('message', message =>{
       }  else if(command === 'help'){
         message.channel.send('here are the commands: -ping,-pong,-hello,-help ');
     }
-else if (command === 'server') {
-var String = 'Server name: ' + message.guild.name + 'Total members: ' +{message.guild.memberCount};
-message.reply(String);
-} 
+//else if (command === 'server') {
+//var String = 'Server name: ' + message.guild.name + 'Total members: ' +{message.guild.memberCount};
+//message.reply(String);
+//} 
 });
 client.on('message', message => {
 
