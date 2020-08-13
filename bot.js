@@ -52,7 +52,12 @@ client.on('message', message => {
         message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
     } else if (command === 'userinfo') {
         message.channel.send(`Your username: ${message.author.username}\nYour ID: ${message.author.id}`);
-    }
+    } else if (command === 'test') {
+        message.channel.send(`Testing...`);
+        message.delete(2000);
+    }    
+    
+    
 });
 client.on('message', message => {
 
