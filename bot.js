@@ -53,8 +53,11 @@ client.on('message', message => {
     } else if (command === 'userinfo') {
         message.channel.send(`Your username: ${message.author.username}\nYour ID: ${message.author.id}`);
     } else if (command === 'ghostping') {
+        if (message.content.includes('@')) {
         message.delete(1000);
         message.channel.send('Done.');
+    }
+        else {message.channel.send('Tell me who to ping you dummy.');}
     }    
     
     
