@@ -34,9 +34,7 @@ client.on('message', message => {
         const args = message.content.slice(prefix.length).split(/ +/);
         const command = args.shift().toLowerCase();
 
-        if (command === 'hey') {
-            client.commands.get('hey').execute(message, args);
-        }
+      
     });
     if (command === 'ping') {
         message.channel.send('pong!');
