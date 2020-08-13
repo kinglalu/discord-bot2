@@ -28,7 +28,7 @@ client.on('message', message =>{
      }  else if(command === 'hello'){
         message.channel.send('hi');
       }  else if(command === 'help'){
-        message.channel.send('here are the commands: -ping,-pong,-hello,-hi,-help ');
+        message.channel.send('here are the commands: -ping,-pong,-hello,-help ');
     }
 else if (message.content === 'server') {
 	message.channel.send(`Server name: {message.guild.name}/nTotal members: {message.guild.memberCount}`);
