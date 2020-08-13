@@ -60,10 +60,10 @@ client.on('message', message => {
         else {message.channel.send('Tell me who to ping you dummy.');}
     }    
       else if (command === 'hey') {
-          message.channel.send('hey.')
+          message.channel.send('hey.');
     }
       else if (command === 'bored') {
-          message.channel.send(`Sorry to hear that ${message.author.username}\nMaybe try going to https://bored.com to cure your boredom?`
+          message.channel.send(`Sorry to hear that ${message.author.username}\nMaybe try going to https://bored.com to cure your boredom?`);
           
       }
 });
